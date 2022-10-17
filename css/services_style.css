@@ -40,10 +40,21 @@ h4 {
     text-transform: uppercase;
 }
 .button {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    padding: 10px;
     font-size: 24px;
     font-weight: 600;
+    background: linear-gradient(to right, #DB3138 70%, transparent 30%); 
+    background-size: 100%;
+    transition: 0.3s ease;
+    cursor: pointer;
 }
-.button::before {
+.button:hover {
+    background-size: 150%;
+}
+/* .button::before {
     content: "";
     display: block;
     width: 40px;
@@ -55,7 +66,7 @@ h4 {
     left: -20px;
     z-index: -1;
     transition: 0.3s;
-}
+} */
 header {
     width: 100%;
     max-width: 1920px;
